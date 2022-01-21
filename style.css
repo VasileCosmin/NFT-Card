@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  background-color: hsl(217, 54%, 11%);
+  color: #fff;
+  font-family: 'Outfit', sans-serif;
+}
+
+.card {
+  width: 375px;
+  margin:  10% auto;
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 30px;
+  padding: 30px 0;
+}
+
+.card-head {
+  position: relative;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.card-head .action {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  width: 90%;
+  height: 99%;
+  border-radius: 10px;
+  background: hsl(178, 100%, 50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.card-head .action img{
+  width: 70px;
+  display: inline-block;
+  color: #fff;
+}
+
+.card-head .action:hover {
+  opacity: .5;
+}
+
+.card-head img {
+  border-radius: 10px;
+  width: 90%;
+}
+
+.card-body {
+  width: 90%;
+  margin: 25px;
+}
+
+.title {
+  margin-bottom: 20px;
+}
+
+.title a {
+  text-decoration: none;
+  color: white;
+}
+
+.title a:hover {
+  cursor: pointer;
+  color: hsl(178, 100%, 50%);
+}
+
+.card-body p {
+  color: hsl(215, 51%, 70%);
+}
+
+.card-body .price-time {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px 0;
+}
+
+.card-body .price-time .price {
+  color: hsl(178, 100%, 50%);
+}
+
+.divider {
+  width: 90%;
+  margin: 20px;
+  border-top: 2px solid hsl(215, 32%, 27%);
+}
+
+.card-footer {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin: 0 20px;
+}
+
+.card-footer p {
+  color: hsl(215, 51%, 70%);
+  margin-left: 10px;
+}
+
+.card-footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.card-footer p a:hover {
+  cursor: pointer;
+  color: hsl(178, 100%, 50%);
+}
+
+.card-footer img {
+  width: 40px;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+@media (min-width: 375px) {
+  .card {
+    width: 350px;
+  }
+
+  .card-head .action {
+    left: 15px;
+  }
+
+  .title {
+    font-size: 26px;
+  }
+}
